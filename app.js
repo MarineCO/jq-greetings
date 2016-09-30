@@ -18,15 +18,15 @@ $("button").click(function(){
 	alert('Je vis à ' + val3);
 
 	var nom = {
-		first_name : "val1",
-		last_name : "val2",
-		city : "val3"
+		first_name : val1,
+		last_name : val2,
+		city : val3
 	};
 
 	console.log(nom)
 
 
-	var bonjour = (val1 + ' ' + val2);
+	var bonjour = (nom.first_name + ' ' + nom.last_name);
 
 	$("#username").html(bonjour);
 });
